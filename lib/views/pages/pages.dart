@@ -1,5 +1,9 @@
+import 'dart:js_util';
+
 import 'package:flutter/material.dart';
 import 'package:email_validator/email_validator.dart';
+
+import '../../widgets/cardview.dart';
 
 part 'loginregister/loginpage.dart';
 part 'loginregister/registerpage.dart';

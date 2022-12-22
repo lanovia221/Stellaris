@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 part of '../../pages.dart';
 
 class SchedulePage extends StatefulWidget {
@@ -13,15 +15,26 @@ class _SchedulePageState extends State<SchedulePage> {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          title: const Text('Schedule'),
+          title: const Text('Scheduletest'),
           backgroundColor: const Color(0xFF91C788),
         ),
-        body: Container(
-            width: double.infinity,
-            height: double.infinity,
-            padding: const EdgeInsets.fromLTRB(24, 16, 24, 16),
-            child: Column(
-              children: [],
-            )));
+        body: ListView(
+          padding: EdgeInsets.only(left: 20.0),
+          children: <Widget>[
+            SizedBox(
+              height: 15.0,
+            ),
+            Text(
+              'MOnday 1 Agustus',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            Container(
+              child: CardView(),
+            )
+          ],
+        ));
   }
 }

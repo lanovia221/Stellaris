@@ -1,4 +1,5 @@
 import 'package:dietaryminder/views/pages/pages.dart';
+import 'package:dietaryminder/widgets/cardview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color(0xFFFEFFDE),
         ),
         debugShowCheckedModeBanner: false,
-        home: const LoginPage());
+        home: const CardView());
   }
 }
